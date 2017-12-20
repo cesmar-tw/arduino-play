@@ -10,13 +10,10 @@ it = util.Iterator(board)
 it.start()
 
 while True:
-    # Insira aqui o comando para ler a luminosidade do sensor
-    luminosidade = sensor_luz.read()
+    # Insira aqui o comando para ler a luminosidade do sensor_luz
 
     # Este é o comando que faz a placa aguardar 2 segundos antes de executar o próximo comando
-    board.pass_time(2)
 
     # Insira aqui o comando para escrever o valor da luminosidade no led
-    luminosidade = led.write(luminosidade)
 
 board.exit()
